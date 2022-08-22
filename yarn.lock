@@ -153,6 +153,12 @@
   resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.5.2.tgz#28f643fbc0bec30b07fbe95b137879b6b4d1c9c5"
   integrity sha512-zrBczSbXKxEyK2ijtbRdICDygRqWSRPpZMN5dD1T8VMEW5RIhIbwFWw2phDRXuBQdVDpSjalCIUMWMV2h3JaZA==
 
+"@michigandaily/bore@michigandaily/bore":
+  version "2.0.2"
+  resolved "https://codeload.github.com/michigandaily/bore/tar.gz/f92c8d02a8c7f5f20fb45145c77ae23d7a66bbb9"
+  dependencies:
+    d3 "^7.6.1"
+
 "@michigandaily/parcel-transformer-nunjucks@michigandaily/parcel-transformer-nunjucks#v2.2.2":
   version "2.2.2"
   resolved "https://codeload.github.com/michigandaily/parcel-transformer-nunjucks/tar.gz/46e48f7eb1e8f0466f4a04010b5972b87dd1ded7"
