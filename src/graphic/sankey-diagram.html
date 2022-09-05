@@ -1,0 +1,10 @@
+{% extends "src/graphic/template/base.html" %} 
+
+{% block styles %} 
+{{ super() }}
+<link rel="stylesheet" href="./css/sankey.scss" type="text/css" media="all" />
+{% endblock %}
+
+{% block scripts %}
+<script src="./js/sankey.js" type="module"></script>
+{% endblock %}

@@ -77,6 +77,13 @@
       "source": "This is the source",
       "note": "This is a note"
     },
+    "sankey-diagram.html": {
+      "hed": "Sankey diagram",
+      "dek": "This is a short description",
+      "byline": "Eric Lau",
+      "source": "This is the source",
+      "note": "This is a note"
+    },
     "data-update.html": {
       "hed": "Data update",
       "dek": "This is a short description",
