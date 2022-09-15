@@ -160,6 +160,15 @@
     d3 "^7.6.1"
     d3-sankey "^0.12.3"
 
+"@michigandaily/parcel-transformer-csv@michigandaily/parcel-transformer-csv":
+  version "1.0.0"
+  resolved "https://codeload.github.com/michigandaily/parcel-transformer-csv/tar.gz/ad65aef338d5dc1cd7202940d27e1fdd7231c6a1"
+  dependencies:
+    "@parcel/core" "^2.7.0"
+    "@parcel/plugin" "^2.7.0"
+    d3-dsv "^3.0.1"
+    parcel "^2.7.0"
+
 "@michigandaily/parcel-transformer-nunjucks@michigandaily/parcel-transformer-nunjucks#v2.2.2":
   version "2.2.2"
   resolved "https://codeload.github.com/michigandaily/parcel-transformer-nunjucks/tar.gz/46e48f7eb1e8f0466f4a04010b5972b87dd1ded7"
@@ -300,7 +309,7 @@
     "@parcel/transformer-react-refresh-wrap" "2.7.0"
     "@parcel/transformer-svg" "2.7.0"
 
-"@parcel/core@2.7.0", "@parcel/core@~2.7.0":
+"@parcel/core@2.7.0", "@parcel/core@^2.7.0", "@parcel/core@~2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/core/-/core-2.7.0.tgz#3310f48230bd618735f199f159f37e6b45ed2710"
   integrity sha512-7yKZUdh314Q/kU/9+27ZYTfcnXS6VYHuG+iiUlIohnvUUybxLqVJhdMU9Q+z2QcPka1IdJWz4K4Xx0y6/4goyg==
@@ -588,7 +597,7 @@
     "@parcel/utils" "2.7.0"
     posthtml "^0.16.4"
 
-"@parcel/plugin@2.7.0", "@parcel/plugin@~2.7.0":
+"@parcel/plugin@2.7.0", "@parcel/plugin@^2.7.0", "@parcel/plugin@~2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.7.0.tgz#0211281025d02afbc5a23fba237b7aae02e34e51"
   integrity sha512-qqgx+nnMn6/0lRc4lKbLGmhNtBiT93S2gFNB4Eb4Pfz/SxVYoW+fmml+KdfOSiZffWOAH5L6NwhyD7N8aSikzw==
@@ -2393,7 +2402,7 @@ p-locate@^6.0.0:
   dependencies:
     p-limit "^4.0.0"
 
-parcel@~2.7.0:
+parcel@^2.7.0, parcel@~2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.7.0.tgz#41fdd3e5c7144d4cf7f1fa3ab8d0ea0d47d31f77"
   integrity sha512-pRYwnivwtNP0tip8xYSo4zCB0XhLt7/gJzP1p8OovCqkmFjG9VG+GW9TcAKqMIo0ovEa9tT+/s6gY1Qy+BONGQ==

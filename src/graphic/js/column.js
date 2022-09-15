@@ -1,13 +1,12 @@
 import pym from "pym.js";
-import { csv, select, rollup, scaleOrdinal } from "d3";
+import { select, rollup, scaleOrdinal } from "d3";
 import { build, schemeMain, ColumnChart } from "@michigandaily/bore";
 
 import downloadImage from "./download-image";
 
-import datafile from "../data/2022-state.csv";
+import csvfile from "../data/2022-state.csv";
 
-const draw = async () => {
-  const csvfile = await csv(datafile);
+const draw = () => {
   const districts = csvfile
     .filter((d) => d["School Type"] === "District")
     .map((d) => {

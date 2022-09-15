@@ -1,16 +1,13 @@
 import pym from "pym.js";
-import { csv, index, flatRollup, select, ascending } from "d3";
+import { index, flatRollup, select, ascending } from "d3";
 import { build, SankeyDiagram } from "@michigandaily/bore";
 
 import downloadImage from "./download-image";
 
-import csv2019 from "../data/2019-state.csv";
-import csv2022 from "../data/2022-state.csv";
+import data2019 from "../data/2019-state.csv";
+import data2022 from "../data/2022-state.csv";
 
-const draw = async () => {
-  const data2019 = await csv(csv2019);
-  const data2022 = await csv(csv2022);
-
+const draw = () => {
   const isCampus = (d) => d["School Type"] !== "District";
 
   const campus2019 = data2019.filter(isCampus);
