@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["graphic/sankey-diagram.5584218e.css","src/graphic/css/sankey.scss"],"sourcesContent":["body {\n  max-width: 500px;\n}\n\n/*# sourceMappingURL=sankey-diagram.5584218e.css.map */\n","body {\n  max-width: 500px;\n}\n"],"names":[],"version":3,"file":"sankey-diagram.5584218e.css.map"}
