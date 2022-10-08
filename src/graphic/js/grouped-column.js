@@ -1,33 +1,34 @@
+// JS for your graphic
 import pym from "pym.js";
-import { select, rollup, scaleOrdinal } from "d3";
-import { build, BarChart, schemeMain } from "@michigandaily/bore";
+import * as d3 from "d3";
+import csvfile from "../data/grouped.csv";
+import { build, GroupedColumnChart } from "@michigandaily/bore";
 
 import downloadImage from "./download-image";
 
-import csvfile from "../data/2022-state.csv";
-
-const draw = () => {
-  const districts = csvfile.filter((d) => d["School Type"] === "District");
-  const data = rollup(
-    districts,
-    (v) => v.length,
-    (d) => d["Overall Rating"]
+const draw = async () => {
+  const data = d3.rollup(
+    csvfile,
+    (v) =>
+      Object.fromEntries(v.map(({ Comfort, Percent }) => [Comfort, Percent])),
+    (d) => d.Politics
   );
 
-  const color = scaleOrdinal()
-    .domain(data.keys())
-    .range(schemeMain.slice(0, data.size));
+  const color = d3
+    .scaleOrdinal()
+    .domain(new Set(csvfile.map((d) => d.Comfort)))
+    .range(["MediumSeaGreen", "lightgreen", "pink", "LightCoral"]);
 
-  select("figure")
+  d3.select("figure")
     .append("svg")
     .datum(data)
     .call(
       build(
-        new BarChart()
-          .wrappx(100)
-          .margin({ left: 50, right: 50 })
-          .height(250)
-          .color((d) => color(d[0]))
+        new GroupedColumnChart()
+          .height(500)
+          .color(color)
+          .xScale(d3.scaleLinear().domain([0, 100]))
+          .label((d) => `${d[1]}%`)
       )
     );
 };
