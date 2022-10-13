@@ -11,6 +11,11 @@
     }
   ],
   "license": "MIT",
+  "targets": {
+    "default": {
+      "publicUrl": "/cookie-monster"
+    }
+  },
   "scripts": {
     "prepare": "husky install",
     "clean": "rm -rf dist/* && rm -rf .parcel-cache",

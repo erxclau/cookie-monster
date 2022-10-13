@@ -106,7 +106,10 @@
       "note": "This is a note"
     }
   },
-  "deployment": "https://erxclau.me",
+  "deployment": {
+    "url": "https://erxclau.github.io/cookie-monster",
+    "build": "./dist"
+  },
   "fetch": [
     {
       "id": "",
