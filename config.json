@@ -1,5 +1,12 @@
 {
   "entries": {
+    "choropleth.html": {
+      "hed": "Map",
+      "dek": "This is a short description",
+      "byline": "Eric Lau",
+      "source": "This is the source",
+      "note": "This is a note"
+    },
     "bar-chart.html": {
       "hed": "Bar chart",
       "dek": "This is a short description",

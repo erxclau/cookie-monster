@@ -1,0 +1,42 @@
+{% extends "src/graphic/template/base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="./css/graphic.scss" type="text/css" media="all" />
+{% endblock %}
+
+{% block scripts %}
+<script type="module">
+  import pym from "pym.js";
+  import ann_arbor from "./data/ann-arbor.json";
+  import * as d3 from "d3";
+  import downloadImage from "./js/download-image";
+
+  window.onload = () => {
+    const pymChild = new pym.Child({ polling: 500 });
+    pymChild.sendHeight();
+    pymChild.onMessage("download", downloadImage);
+
+    const figure = d3.select("figure");
+    const width = figure.node().clientWidth;
+    const height = 500;
+
+    const projection = d3.geoMercator()
+      .fitSize([width, height], ann_arbor);
+
+    const path = d3.geoPath().projection(projection);
+
+    const svg = figure
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    svg.selectAll("path")
+      .data(ann_arbor.features)
+        .join("path")
+        .attr("d", path)
+        .attr("fill", "steelblue")
+        .attr("stroke", "white");
+  }
+</script>
+{% endblock %}

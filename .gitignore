@@ -4,6 +4,9 @@ dist/
 auth.json
 .daily-google-services.json
 *.ai
+*.qmd
+*.zip
+shp/
 
 # Logs
 logs
