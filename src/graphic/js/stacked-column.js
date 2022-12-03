@@ -4,7 +4,8 @@ import * as d3 from "d3";
 import csvfile from "../data/grouped.csv";
 import { build, StackedColumnChart } from "@michigandaily/bore";
 
-import downloadImage from "./download-image";
+import downloadImage from "./util/download-image";
+import setDisplayOptions from "./util/set-display";
 
 const draw = async () => {
   const test = d3.rollup(
@@ -32,8 +33,9 @@ const draw = async () => {
 window.onresize = () => {};
 
 window.onload = () => {
-  const pymChild = new pym.Child({ polling: 500 });
-  pymChild.sendHeight();
-  pymChild.onMessage("download", downloadImage);
+  const child = new pym.Child({ polling: 500 });
+  child.sendHeight();
+  child.onMessage("download", downloadImage);
+  setDisplayOptions();
   draw();
 };

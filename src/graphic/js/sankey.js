@@ -2,7 +2,8 @@ import pym from "pym.js";
 import { index, flatRollup, select, ascending } from "d3";
 import { build, SankeyDiagram } from "@michigandaily/bore";
 
-import downloadImage from "./download-image";
+import downloadImage from "./util/download-image";
+import setDisplayOptions from "./util/set-display";
 
 import data2019 from "../data/2019-state.csv";
 import data2022 from "../data/2022-state.csv";
@@ -65,8 +66,9 @@ const draw = () => {
 window.onresize = () => {};
 
 window.onload = () => {
-  const pymChild = new pym.Child({ polling: 500 });
-  pymChild.sendHeight();
-  pymChild.onMessage("download", downloadImage);
+  const child = new pym.Child({ polling: 500 });
+  child.sendHeight();
+  child.onMessage("download", downloadImage);
+  setDisplayOptions();
   draw();
 };

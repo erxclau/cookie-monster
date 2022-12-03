@@ -110,17 +110,5 @@
     "url": "https://erxclau.github.io/cookie-monster",
     "build": "./dist"
   },
-  "fetch": [
-    {
-      "id": "",
-      "output": "",
-      "auth": "~/.daily-google-services.json"
-    },
-    {
-      "id": "",
-      "sheetId": "0",
-      "output": "",
-      "auth": "~/.daily-google-services.json"
-    }
-  ]
+  "fetch": []
 }

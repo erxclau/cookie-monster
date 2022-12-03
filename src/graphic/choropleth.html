@@ -2,7 +2,7 @@
 
 {% block styles %}
 {{ super() }}
-<link rel="stylesheet" href="./css/graphic.scss" type="text/css" media="all" />
+<link rel="stylesheet" href="./css/graphic.scss" />
 {% endblock %}
 
 {% block scripts %}
@@ -10,7 +10,7 @@
   import pym from "pym.js";
   import ann_arbor from "./data/ann-arbor.json";
   import * as d3 from "d3";
-  import downloadImage from "./js/download-image";
+  import downloadImage from "./js/util/download-image";
 
   window.onload = () => {
     const pymChild = new pym.Child({ polling: 500 });
