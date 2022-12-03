@@ -1,1 +1,0 @@
-{"mappings":"ACAA","sources":["graphic/column-chart.64d15d19.css","src/graphic/css/column.scss"],"sourcesContent":["body {\n  max-width: 500px;\n}\n\n/*# sourceMappingURL=column-chart.64d15d19.css.map */\n","body {\n  max-width: 500px;\n}\n"],"names":[],"version":3,"file":"column-chart.64d15d19.css.map"}

@@ -1,0 +1,21 @@
+import{c as e,a as o}from"./set-display.8240a882.js";const r=e(`Politics,Comfort,Percent
+Very Conservative,Very Comfortable,71.05
+Very Conservative,Somewhat Comfortable,23.68
+Very Conservative,Somewhat Uncomfortable,2.63
+Very Conservative,Very Uncomfortable,2.63
+Somewhat Conservative,Very Comfortable,64.41
+Somewhat Conservative,Somewhat Comfortable,21.19
+Somewhat Conservative,Somewhat Uncomfortable,10.17
+Somewhat Conservative,Very Uncomfortable,4.24
+Moderate,Very Comfortable,37.39
+Moderate,Somewhat Comfortable,35.98
+Moderate,Somewhat Uncomfortable,16.71
+Moderate,Very Uncomfortable,9.92
+Somewhat Liberal,Very Comfortable,22.66
+Somewhat Liberal,Somewhat Comfortable,41.76
+Somewhat Liberal,Somewhat Uncomfortable,25.66
+Somewhat Liberal,Very Uncomfortable,9.93
+Very Liberal,Very Comfortable,19.44
+Very Liberal,Somewhat Comfortable,39.25
+Very Liberal,Somewhat Uncomfortable,28.79
+Very Liberal,Very Uncomfortable,12.52`,o);export{r as c};

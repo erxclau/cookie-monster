@@ -1,0 +1,1 @@
+const r=e=>document.querySelector(e),s=(e,a=300)=>{let t;return(...o)=>{clearTimeout(t),t=setTimeout(()=>{e.apply(globalThis,o)},a)}},c=()=>new URLSearchParams(window.location.search.slice(1)),n=e=>{const{history:a,title:t}=window;a.replaceState(null,t,`?${e.toString()}`)};export{r as $,s as d,c as g,n as u};
